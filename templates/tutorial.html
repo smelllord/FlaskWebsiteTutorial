@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website Tutorial</title>
+        <style>
+            body {
+                background-color: 	rgb(66, 62, 62);
+                color: whitesmoke;
+            }
+            h1 {
+                background-color: rgb(72,61,139);
+            }
+            h2 {
+                background-color: rgb(72,61,139);
+            }
+            p {
+                background-color: rgb(72,61,139);
+            }
+            .Arial {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body class="Arial">
+        <h1 class="Arial">Welcome!</h1>
+        <p>
+            This is the tutorial for making a website with very basic python and html! <br>
+        </p>
+        <h2>
+            Setting up an account on <a href = "https://repl.it">repl.it</a>
+        </h2>
+        <img src = "https://repl.it/public/images/sm.png" style="height: 300px; width: 300px;">
+        <p>
+            If you haven't already, make an account on <a href= "https://repl.it">repl.it</a> and open a python project <br>
+            copy the contents of this folder to the project
+        </p>
+        <h2>Paths for your website</h2>
+        <p>
+            Your website has a query which you can use to have multiple html files in the same website
+            <br> you can add queries to your website in python like that.
+        </p>
+        <img src="main.py - websitetutorial - Visual Studio Code 09_04_2021 6_06_24.png" style="height: 250px; width: 500px;">
+        <p>
+            To add a path to your website, write a decorator in the beginning like so:
+            <br> <code>@app.route('/your_path_name')</code>
+            <br> Then right after the decorator write the following function:
+            <br> <code>def func_name(): <br>    return render_template("your_file.html")</code>
+        </p>
+        <h2>
+            Keeping the Server Running Forever
+        </h2>
+        <p>
+            replit provides a free server for us to use, however if the server is not interacted with for too much time, the server will stop and the website won't run <br>
+            To prevent this, we will be using <a href="https://uptimerobot.com/">uptimerobot</a> which will ping the server once every five minutes. <br>
+            First of all, sign up or log in to uptimerobot <br>
+            Once you have entered, click on the 'Add New Monitor' button <br>
+        </p>
+        <img src = "uptimerobot.png" style="height: 300px; width: 500px;">
+        <p>
+            In 'monitor type' select HTTP(s) <br>
+            Enter any friendly name you want, although it should be descriptive
+            <br> For the url, enter <code>https://replit_projectname.replit_username.repl.co</code>
+            <br> And as for the monitoring interval, you can shorten or lengthen it, but I'd recommend keeping it at 5 minutes
+            <br> When you're done, click 'Create Monitor'
+        </p>
+        <h2>Html Files</h2>
+        <p>
+            Since I'm assuming you already know HTML, I'll only Go over where to put the files <br>
+            <bold>Every file you want in your website should be in the 'templates' folder, or else they won't render</bold>
+        </p>
+        <p>
+            That's it for making the template! Now you can customize it to make your own website <br>
+            Good Luck!
+        </p>
+    </body>
+</html>
